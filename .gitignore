@@ -1,5 +1,5 @@
 *.json
 .gcloudignore
-predict_tabular_classification_sample
+predict_tabular_classification_sample.py
 gcloud
 docker
