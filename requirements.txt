@@ -1,0 +1,13 @@
+streamlit>=1.18.0
+asyncio==3.4.3
+asyncpg==0.27.0
+numpy
+pandas
+altair<5
+protobuf<=3.20.1
+cloud-sql-python-connector
+google-cloud
+google-cloud-aiplatform
+shapely<2
+kfp
+google-cloud-pipeline-components

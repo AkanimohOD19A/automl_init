@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "focus-healer-345005",
+  "private_key_id": "bf5d1c4a6f929f53a4a7a98d21dd5879a078cf13",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCRw0J2TiVnmR1V\nVsNGRnlY93nRtKvlWNFWAd791eOV2EWDbcKoW5otL9Y/sYm55vFuldR8Z2ej7eAJ\nCKEd64aw4acwRMvNdYVNKXiPVsXYCkAkRwxL8R3RJ6lXI/VSEO25CMd4WjhlIWs7\nx8OnHxatM5MIxs5rWvCKwhh/N4qTA5Mqg69ISXs1pM4EAbv9oKvI9U+Yvh3eFLM2\nke+Mxsx2fhcsW+WQXpOuQ3zweQ++Arap+K2qB+GMeM/7VPRSsLNB3NRWdxIgEfQF\nDjKzztgO5R8xMYncyx4IpCd+0lww3GfcwsmFSRv0mf2mvkue3m3jCkQl4fozEdjr\njZA7ZXgjAgMBAAECgf8N3iIQ0UR4VaxwbbsQqsrYD9HQ9l91qufgNY5ybJBDKtbW\nBVo19BBKkw54ZKQd8aspWBORHYZ9pa7e+RXqQKVBxrhiZcEPZ0pQEWDpI97NLOK5\nRxYuLCHm1Z4SwgJCj8qQVqCa+b2tk1lSUlhX+oeEjyss51US+7JPEHZrO+7h0OQF\nf0FX3X7e8K93xa/MeOSla8sTdVepQnPyLyoPduLrEHWE7EMsfNnpcK4LCVpKYRsB\nEvzFpxGu9QW+dFFyQWCr3nHRWZNoPmYftKK6WbDMt4v6X2C1dsyn3UYWxB5qqm3I\np34gIBKn/todcoA3cXNA6JizDYfyCtALWva5A8ECgYEAwgtfVoaVDnLSVCF6xNVm\nHMh8de9mxr7XUWHv112Gj8hM6ttassbrzHFirGWzTb1872KHtW1wQWtvnxQsBVDG\nt/tXsUGCNRcSJ7QnrCkhEkluww30hiNk1tp8VhqW7txuGaRLcJugTN9BVK2A1cOx\nRI1w8YB0Ezlos2ODXP8vKyECgYEAwE17Z0MFks786FLwaIQWEfGW+GxDcXqJrYVA\nYMrCIdsRxc34RTBfdB4z2QB7Oo5LowDJmR4r6WEShJFyZAbAuFlOeTbTsDNV7BUD\nPcD7rZHKXhivNaQUsBka12e7eGnve+lioFl0fGccRR3/8GSVUWYjAUFBFJlQTFkz\nzTnx3sMCgYBy4WjAQU1eEHyVcnzMq8qYn9mPuPyQDcxMUj88shJIbb2cDeHUlhBk\nKXzRtCRDkju1PhA6SWB8Wq7q73Zgb0I3CocQWkhMRixpdS9HrdH2kaMRt+FcyPea\nfB/Aml1hbP+CDtLbCEgPOt3i1BXCeOkqPNLxJ6uQ9hwWmIPdOvciAQKBgQCW1G8F\nGDln47fUVTFBGNDitBXQtcHUYONZ2VkcUgwgV95BwoKHaiCESCgsfUcqL2+94yE8\nWsDgZQYMOrR5Jh7EuS9mvY0d97Xd3MFVD2eXxPDwCvZp4U9kq9w0taUCFj0DeJOl\n52QJKyquP5B+MbY4SR8Nnev4xyOHLrQFtPwz1wKBgEd9Okzl6bBjTVI4CedCg4ER\nZrRnPrHeXc6hhtTFECi7A8qKM7xNN3v/KReZrLD18jjfSmFWeuce/UEVXMs6MVH1\nAF83gxhtZtQwtBs6F1RTkIfp4z4X4wckainKZHlkl6/acphjn0GB3u2E4d5LlOoB\n0HFCJUl8R1VPwDw3pAji\n-----END PRIVATE KEY-----\n",
+  "client_email": "focus-healer-345005@appspot.gserviceaccount.com",
+  "client_id": "112307077744174041557",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/focus-healer-345005%40appspot.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

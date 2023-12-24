@@ -1,0 +1,14 @@
+
+# below:
+.git
+.gitignore
+predict_tabular_classification_sample.py
+# Python pycache:
+__pycache__/
+# Ignored by the build system
+/setup.cfg
+webdata/
+venv/
+index/
+.vscode/
+./sa-creds.json
