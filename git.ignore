@@ -1,5 +1,5 @@
-./sa-creds.json
-./.gcloudignore
-./predict_tabular_classification_sample
-./gcloud
-./docker
+sa-creds.json
+.gcloudignore
+predict_tabular_classification_sample
+gcloud
+docker
