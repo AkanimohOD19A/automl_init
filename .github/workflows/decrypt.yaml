@@ -1,13 +1,11 @@
-name: Decrypt Credential file
-
-on: push
-
-jobs:
-  init-job:
-    name: Initial Decryption job
-    runs-on: ubuntu-latest
-    steps:
-        run: |
+- name: Decrypt Credential file
+  on: push
+  jobs:
+    init-job:
+      name: Initial Decryption job
+      runs-on: ubuntu-latest
+      steps:
+        - run: |
             chmod +x ./decrypt_sa_creds.sh
             ./decrypt_sa_creds.sh
           env:
