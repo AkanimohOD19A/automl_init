@@ -1,4 +1,4 @@
-- name: Decrypt Credential file
+name: Decrypt Credential file
   on: push
   jobs:
     init-job:
