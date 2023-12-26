@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - run: |
-            chmod +x ${GITHUB_WORKSPACE}/decrypt_sa_creds.sh
+            chmod +x ../../decrypt_sa_creds.sh
             ./decrypt_sa_creds.sh
           env:
             SA_CREDS_PASSPHRASE: ${{ secrets.SA_CREDS_PASSPHRASE }}
