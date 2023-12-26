@@ -4,4 +4,3 @@ name: Decrypt sa-creds.json file
   run: |
     chmod +x ./decrypt_sa_creds.sh
     ./decrypt_sa_creds.sh
-
