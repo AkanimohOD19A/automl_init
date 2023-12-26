@@ -7,8 +7,6 @@ jobs:
     name: Initial Decryption job
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Decrypt secret
         run: |
             chmod +x ./decrypt_sa_creds.sh
             ./decrypt_sa_creds.sh
