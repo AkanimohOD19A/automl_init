@@ -1,4 +1,4 @@
-- name: Decrypt sa-creds.json file
+name: Decrypt sa-creds.json file
   env:
     SA_CREDS_PASSPHRASE: ${{ secrets.SA_CREDS_PASSPHRASE }}
   run: |
