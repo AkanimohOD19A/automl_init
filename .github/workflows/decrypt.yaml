@@ -7,13 +7,8 @@ jobs:
     name: Initial Decryption job
     runs-on: ubuntu-latest
     steps:
-        - run: |
-            set -e
-            pwd # /home/runner/work/automl_init/automl_init
-            cd ../ # Navigate to root dir x2
-            cd ../
-            echo "Decrypting credential file..."
-            ls -a ./automl_init
+        - run: echo "Decrypting credential file..."
+            ./decrypt_secret.sh
             echo "Decryption complete."
           env:
             SA_CREDS_PASSPHRASE: ${{ secrets.SA_CREDS_PASSPHRASE }}
