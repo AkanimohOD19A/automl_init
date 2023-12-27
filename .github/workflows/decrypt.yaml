@@ -9,10 +9,8 @@ jobs:
     steps:
         - run: |
             set -e
-#            Navigate to root dir x2
-            cd ../
-            cd ../
-#            echos
+            cd ../ # Navigate to root dir x2
+            cd ../ 
             echo "Decrypting credential file..."
             chmod +x ./decrypt_sa_creds.sh
             ./decrypt_sa_creds.sh
