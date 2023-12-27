@@ -12,3 +12,5 @@ jobs:
             echo "Decryption complete."
           env:
             SA_CREDS_PASSPHRASE: ${{ secrets.SA_CREDS_PASSPHRASE }}
+        - name: Test printing your secret (Remove this step in production)
+          run: cat $HOME/secrets/my_secret.json
