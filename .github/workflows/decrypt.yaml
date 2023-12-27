@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - run: |
-            pwd
+#            pwd
             ls
           env:
             SA_CREDS_PASSPHRASE: ${{ secrets.SA_CREDS_PASSPHRASE }}
