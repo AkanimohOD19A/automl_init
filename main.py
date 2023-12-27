@@ -8,7 +8,6 @@ from google.cloud import aiplatform
 import os
 
 print(os.environ['HOME'])
-st.write(os.environ['$HOME'])
 
 st.write(os.environ['HOME'])
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '$HOME/secrets/sa-creds.json'
