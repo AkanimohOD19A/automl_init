@@ -9,15 +9,15 @@ jobs:
     steps:
         - uses: actions/checkout@v3
         - name: List directory structure
-          run: ls -la .
+          run: ls .
         - name: Show decryption content
-          run: echo "Printing decryption script ...."
-            cat requirements.txt
+        - run: echo "Printing decryption script ...."
+        - run: cat ./requirements.txt
         - run: echo "Decrypting credential file..."
-            chmod +x ./decrypt_sa_creds.sh
-            echo "Granted Permission and Running ...."
-            ./decrypt_sa_creds.sh
-            echo "Decryption complete."
+        - run: chmod +x ./decrypt_sa_creds.sh
+        - run: echo "Granted Permission and Running ...."
+        - run: ./decrypt_sa_creds.sh
+        - run: echo "Decryption complete."
           env:
             SA_CREDS_PASSPHRASE: ${{ secrets.SA_CREDS_PASSPHRASE }}
         - name: Test printing your secret (Remove this step in production)
