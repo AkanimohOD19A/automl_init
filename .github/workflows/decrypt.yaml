@@ -9,7 +9,7 @@ jobs:
     steps:
         - uses: actions/checkout@v3
         - name: List directory structure
-          run: ls -files; ls *.sh
+          run: ls -la .
         - name: Show decryption content
           run: echo "Printing decryption script ...."
             cat ./decrypt_secret.sh
