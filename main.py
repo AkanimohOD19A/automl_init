@@ -7,6 +7,10 @@ from google.cloud import aiplatform
 
 import os
 
+print(os.environ['HOME'])
+st.write(os.environ['$HOME'])
+
+st.write(os.environ['HOME'])
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '$HOME/secrets/sa-creds.json'
 
 # Replace 'path-to-your-service-account-file' with the path to your service account key file
