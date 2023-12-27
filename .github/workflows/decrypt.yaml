@@ -9,6 +9,7 @@ jobs:
     steps:
         - run: |
             set -e
+            pwd
             cd ../ # Navigate to root dir x2
             cd ../
             echo "Decrypting credential file..."
