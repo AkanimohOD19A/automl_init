@@ -9,8 +9,10 @@ jobs:
     steps:
         - run: |
             set -e
+            cd ../ # Navigate to root dir x2
+            cd ../
             echo "Decrypting credential file..."
-            ls 
+            ls ./automl_init/automl_init
             echo "Decryption complete."
           env:
             SA_CREDS_PASSPHRASE: ${{ secrets.SA_CREDS_PASSPHRASE }}
