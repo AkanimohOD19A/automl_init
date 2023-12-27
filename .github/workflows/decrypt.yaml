@@ -1,24 +1,30 @@
-name: Decrypt Credential file
+name: Decrypt Credential File
 
 on: push
 
 jobs:
   init-job:
-    name: Initial Decryption job
+    name: Initial Decryption Job
     runs-on: ubuntu-latest
+
     steps:
-        - uses: actions/checkout@v3
-        - name: List directory structure
-          run: ls .
-        - name: Show decryption content
-        - run: echo "Printing decryption script ...."
-        - run: cat ./requirements.txt
-        - run: echo "Decrypting credential file..."
-        - run: chmod +x ./decrypt_sa_creds.sh
-        - run: echo "Granted Permission and Running ...."
-        - run: ./decrypt_sa_creds.sh
-        - run: echo "Decryption complete."
-          env:
-            SA_CREDS_PASSPHRASE: ${{ secrets.SA_CREDS_PASSPHRASE }}
-        - name: Test printing your secret (Remove this step in production)
-          run: ls $HOME/secrets
+      - uses: actions/checkout@v3
+
+      - name: List Directory Structure
+        run: ls -la  # Use -la to include hidden files
+
+      - name: Print Decryption Script Contents
+        run: cat ./requirements.txt
+
+      - name: Decrypt Credentials
+        run: |
+          echo "Decrypting credential file..."
+          chmod +x ./decrypt_sa_creds.sh
+          echo "Granted Permission and Running ..."
+          ./decrypt_sa_creds.sh
+          echo "Decryption complete."
+        env:
+          SA_CREDS_PASSPHRASE: ${{ secrets.SA_CREDS_PASSPHRASE }}
+
+      - name: Test Printing Secret (Remove in Production)
+        run: ls $HOME/secrets
