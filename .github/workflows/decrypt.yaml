@@ -12,7 +12,7 @@ jobs:
           run: ls -la .
         - name: Show decryption content
           run: echo "Printing decryption script ...."
-            cat ./decrypt_sa_creds.sh
+            cat requirements.txt
         - run: echo "Decrypting credential file..."
             chmod +x ./decrypt_sa_creds.sh
             echo "Granted Permission and Running ...."
