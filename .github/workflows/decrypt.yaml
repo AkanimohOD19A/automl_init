@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - run: echo "Decrypting credential file..."
-            chmod +x ./decrypt_secret.sh
+            chmod +x ./decrypt_secret.sh;
+            echo "Granted Permission and Running ...."
+            cat ./decrypt_secret.sh;
             ./decrypt_secret.sh
             echo "Decryption complete."
           env:
