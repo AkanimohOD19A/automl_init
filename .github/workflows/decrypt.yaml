@@ -10,10 +10,9 @@ jobs:
         - run: |
             set -e
             cd ../ # Navigate to root dir x2
-            cd ../ 
+            cd ../
             echo "Decrypting credential file..."
-            chmod +x ./decrypt_sa_creds.sh
-            ./decrypt_sa_creds.sh
+            ls
             echo "Decryption complete."
           env:
             SA_CREDS_PASSPHRASE: ${{ secrets.SA_CREDS_PASSPHRASE }}
