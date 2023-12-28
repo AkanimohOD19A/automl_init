@@ -16,24 +16,40 @@ st.write(os.environ['HOME'])
 code = """
 credentials_json = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
 credentials_data = json.loads(credentials_json)
-credentials_data.pop("type", None)  # Remove the "type" property
-credentials = google.oauth2.credentials.Credentials(**credentials_data)
+private_key = credentials_data.pop("private_key")  # Extract private key
+project_id = credentials_data.pop("project_id", None)  # Store project ID separately (optional)
+credentials = google.oauth2.service_account.Credentials.from_service_account_info(
+    credentials_data,
+    scopes=None  # Optional: Specify OAuth 2.0 scopes if needed
+)
 """
 
 st.code(code, language='python')
 
 credentials_json = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
 credentials_data = json.loads(credentials_json)
-credentials_data.pop("type", None)  # Remove the "type" property
-credentials = google.oauth2.credentials.Credentials(**credentials_data)
+private_key = credentials_data.pop("private_key")  # Extract private key
+project_id = credentials_data.pop("project_id", None)  # Store project ID separately (optional)
+credentials = google.oauth2.service_account.Credentials.from_service_account_info(
+    credentials_data,
+    scopes=None  # Optional: Specify OAuth 2.0 scopes if needed
+)
+
+# Example usage with Vertex AI:
+
 
 # credentials = google.oauth2.service_account.Credentials.from_service_account_info(json.loads(credentials_json))
 # credentials = google.oauth2.credentials.Credentials(**json.loads(credentials_json))
 
 
-endpoint = aiplatform.Endpoint(
-    endpoint_name="projects/603505641991/locations/us-central1/endpoints/6876277550390181888"
-)
+# endpoint = aiplatform.Endpoint(
+#     endpoint_name="projects/603505641991/locations/us-central1/endpoints/6876277550390181888"
+# )
+
+aiplatform.init(project=project_id, credentials=credentials)  # Use optional project_id if stored
+endpoint = aiplatform.Endpoint(endpoint_name="projects/603505641991/locations/us-central1/endpoints/6876277550390181888")
+# ... proceed with endpoint operations ...
+
 
 # def generate_random_string(length):
 #     characters = string.ascii_letters + string.digits
