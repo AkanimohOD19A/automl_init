@@ -1,16 +1,25 @@
 import os
 import string
+import json
 import random
-
 import streamlit as st
 from google.cloud import aiplatform
+from google.oauth2 import service_account
 
-import os
 
 print(os.environ['HOME'])
 
 st.write(os.environ['HOME'])
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '$HOME/secrets/sa-creds.json'
+# os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '$HOME/secrets/sa-creds.json'
+
+# Get the value of the environment variable
+creds_json = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
+
+# Parse the JSON string into a dictionary
+creds_dict = json.loads(creds_json)
+
+# Create a Credentials object from the dictionary
+creds = service_account.Credentials.from_service_account_info(creds_dict)
 
 # Replace 'path-to-your-service-account-file' with the path to your service account key file
 # os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'path-to-your-service-account-file'
