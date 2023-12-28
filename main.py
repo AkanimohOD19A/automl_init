@@ -15,15 +15,20 @@ st.write(os.environ['HOME'])
 
 code = """
 credentials_json = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
-# credentials = google.oauth2.credentials.Credentials.from_authorized_user_info(json.loads(credentials_json))
-credentials = google.oauth2.service_account.Credentials.from_service_account_info(json.loads(credentials_json))
+credentials_data = json.loads(credentials_json)
+credentials_data.pop("type", None)  # Remove the "type" property
+credentials = google.oauth2.credentials.Credentials(**credentials_data)
 """
 
 st.code(code, language='python')
 
 credentials_json = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
+credentials_data = json.loads(credentials_json)
+credentials_data.pop("type", None)  # Remove the "type" property
+credentials = google.oauth2.credentials.Credentials(**credentials_data)
+
 # credentials = google.oauth2.service_account.Credentials.from_service_account_info(json.loads(credentials_json))
-credentials = google.oauth2.credentials.Credentials(**json.loads(credentials_json))
+# credentials = google.oauth2.credentials.Credentials(**json.loads(credentials_json))
 
 
 endpoint = aiplatform.Endpoint(
