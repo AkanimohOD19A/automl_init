@@ -22,24 +22,24 @@ st.write(os.environ['HOME'])
 # creds = service_account.Credentials.from_service_account_info(creds_dict)
 
 # Replace 'path-to-your-service-account-file' with the path to your service account key file
-# os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'path-to-your-service-account-file'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'projects/603505641991/secrets/gac_sa-creds/versions/latest'
 
-def access_secret_version():
-    # Create the Secret Manager client.
-    client = secretmanager.SecretManagerServiceClient()
-
-    # Build the resource name of the secret version.
-    # name = f"projects/{project_id}/secrets/{secret_id}/versions/{version_id}"
-    name = "projects/603505641991/secrets/gac_sa-creds/versions/latest"
-
-    # Access the secret version.
-    response = client.access_secret_version(request={"name": name})
-
-    # Return the decoded payload.
-    return response.payload.data.decode('UTF-8')
-
-# Use the function to get the secret
-secret = access_secret_version()
+# def access_secret_version():
+#     # Create the Secret Manager client.
+#     client = secretmanager.SecretManagerServiceClient()
+#
+#     # Build the resource name of the secret version.
+#     # name = f"projects/{project_id}/secrets/{secret_id}/versions/{version_id}"
+#     name = "projects/603505641991/secrets/gac_sa-creds/versions/latest"
+#
+#     # Access the secret version.
+#     response = client.access_secret_version(request={"name": name})
+#
+#     # Return the decoded payload.
+#     return response.payload.data.decode('UTF-8')
+#
+# # Use the function to get the secret
+# secret = access_secret_version()
 
 endpoint = aiplatform.Endpoint(
     endpoint_name="projects/603505641991/locations/us-central1/endpoints/6876277550390181888"
