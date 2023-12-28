@@ -16,7 +16,7 @@ st.write(os.environ['HOME'])
 code = """
 credentials_json = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
 credentials_data = json.loads(credentials_json)
-private_key = credentials_data.pop("private_key")  # Extract private key
+# private_key = credentials_data.pop("private_key")  # Extract private key
 project_id = credentials_data.pop("project_id", None)  # Store project ID separately (optional)
 credentials = google.oauth2.service_account.Credentials.from_service_account_info(
     credentials_data,
@@ -28,7 +28,7 @@ st.code(code, language='python')
 
 credentials_json = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
 credentials_data = json.loads(credentials_json)
-private_key = credentials_data.pop("private_key")  # Extract private key
+# private_key = credentials_data.pop("private_key")  # Extract private key
 project_id = credentials_data.pop("project_id", None)  # Store project ID separately (optional)
 credentials = google.oauth2.service_account.Credentials.from_service_account_info(
     credentials_data,
