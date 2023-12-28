@@ -14,7 +14,9 @@ st.write(os.environ['HOME'])
 
 
 code = """
-EMPTY
+credentials_json = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
+credentials = google.oauth2.credentials.Credentials.from_authorized_user_info(json.loads(credentials_json))
+
 """
 
 st.code(code, language='python')
