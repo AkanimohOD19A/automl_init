@@ -27,4 +27,6 @@ jobs:
           SA_CREDS_PASSPHRASE: ${{ secrets.SA_CREDS_PASSPHRASE }}
 
       - name: Test Printing Secret (Remove in Production)
-        run: ls $HOME/secrets
+        run: |
+        echo $HOME
+        ls $HOME/secrets
