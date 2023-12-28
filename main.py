@@ -22,13 +22,13 @@ st.write(os.environ['HOME'])
 # creds = service_account.Credentials.from_service_account_info(creds_dict)
 
 code = """
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'projects/603505641991/secrets/gac_sa-creds/versions/latest'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 """
 
 st.code(code, language='python')
 
 # Replace 'path-to-your-service-account-file' with the path to your service account key file
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'projects/603505641991/secrets/gac_sa-creds/versions/latest'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 
 
 # def access_secret_version():
