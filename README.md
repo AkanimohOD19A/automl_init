@@ -1,5 +1,3 @@
-# Content for the README.md file
-readme_content = """
 # Let's Build Your First ML App in Google Cloud Run
 
 ![Header Image](https://res.cloudinary.com/practicaldev/image/fetch/s--3J5Q5J9m--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1ol2.jpg)
@@ -28,6 +26,7 @@ Before you begin, ensure you have the following:
 
 ## Project Structure
 Here's an overview of the project structure:
+```
 your-repo-name/
 ├── README.md
 ├── .gitignore
@@ -40,6 +39,7 @@ your-repo-name/
 │   └── templates/
 ├── Dockerfile
 └── cloudbuild.yaml
+```
 
 ## Setup
 1. Clone the repository:
