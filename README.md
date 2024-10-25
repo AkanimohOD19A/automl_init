@@ -1,6 +1,6 @@
 # Let's Build Your First ML App in Google Cloud Run
 
-![Header Image](https://res.cloudinary.com/practicaldev/image/fetch/s--3J5Q5J9m--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1ol2.jpg)
+![Header Image](https://github.com/user-attachments/assets/267d16cb-6e33-4e17-be58-5b8e0696fd59)
 
 This repository contains the code and instructions to build and deploy your first Machine Learning (ML) application using Google Cloud Run. This guide is based on the blog post [Let's Build Your First ML App in Google Cloud Run](https://dev.to/afrologicinsect/lets-build-your-first-ml-app-in-google-cloud-run-1ol2).
 
@@ -103,3 +103,5 @@ Conclusion
 Congratulations! You’ve successfully built and deployed your first ML application using Google Cloud Run. For more details, refer to the original blog post.
 
 ![Footer Image](https://media.dev.to/cdn-cgi/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fj02i1wvdy1wqam27yxgb.png)
+
+Read the Full Blog: https://dev.to/afrologicinsect/lets-build-your-first-ml-app-in-google-cloud-run-1ol2
